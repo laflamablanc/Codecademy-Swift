@@ -1,7 +1,5 @@
 // The Magic 8-Ball is a popular toy developed in the 1950s for fortune-telling or advice seeking.
 
-// In this project, you’ll hone your conditional skills by creating a program that can answer any “Yes” or “No” question with a different fortune each time.
-
 var playerName = "Sean"
 var playerQuestion = "Will I get a job?"
 var randomNumber = Int.random(in: 1...9)
@@ -29,6 +27,9 @@ switch randomNumber {
     default:
         eightBall = "Error"
 }
+var nameAsk = "\(playerName) asks:"
 
-print("\(playerName) asks: \(playerQuestion)")
-print("Magic 8 Ball's answer: \(eightBall)")
+
+playerName != "" ? print(nameAsk + playerQuestion) : print(playerQuestion)
+
+print(eightBall)
