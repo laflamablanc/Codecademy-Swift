@@ -1,0 +1,26 @@
+Logical AND Operator
+The logical, &&, operator evaluates two operands and returns a Boolean result. It returns true only when both operands are true and returns false when at least one operand is false.
+
+&& is denoted by two ampersand symbols and translates to AND.
+
+The following truth table demonstrates all of the possible outcomes of an expression using &&.
+
+Logical Expression	Result
+true && true	true
+true && false	false
+false && true	false
+false && false	false
+
+Let’s see the && operator in action. Assume we’re writing a program for an application that dims a screen by 25% in the evening time. We can set up the following if/else statement for this case:
+
+var time = 8 // PM 
+var phoneInUse = true 
+var brightness: Double
+ 
+if time >= 8 && phoneInUse {
+  brightness = 0.75 
+} else {
+  brightness = 1 
+}
+ 
+print(brightness) // Prints: 0.75
