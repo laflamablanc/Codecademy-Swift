@@ -24,3 +24,32 @@ if time >= 8 && phoneInUse {
 }
  
 print(brightness) // Prints: 0.75
+
+---------------------------------------
+
+Logical OR Operator
+The logical, ||, operator evaluates two operands and returns a Boolean result. 
+It returns false only when both operands are false and returns true when at least one operand is true.
+
+|| is denoted by two pipe symbols and translates to OR.
+
+The following truth table demonstrates all of the possible outcomes of an expression using ||.
+
+Logical Expression	Result
+true || true	true
+true || false	true
+false || true	true
+false || false	false
+
+Take a look at the following example:
+
+var snowing = false 
+var raining = true
+ 
+if snowing || raining {
+ print("Wear waterproof shoes!")
+}
+
+If it is snowing OR raining, we recommend wearing waterproof shoes because in either scenario, 
+your feet can get wet! Since raining is true, the condition will result in true, 
+and the message Wear waterproof shoes! will get printed.
