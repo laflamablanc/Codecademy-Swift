@@ -1,0 +1,15 @@
+Types of Variables:
+- Int: integer numbers
+- Double: floating-point numbers
+- String: a sequence of characters
+- Bool: true/false values
+
+To Declare a Variable:
+
+var score = 0
+
+var is a keyword used to declare Variables
+score is the variable name
+= is the assignment operator
+0 is the value
+
