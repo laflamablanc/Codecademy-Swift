@@ -13,3 +13,63 @@ score is the variable name
 = is the assignment operator
 0 is the value
 
+Type
+We can provide a type annotation when we declare a variable to be clear about 
+the kind of value that the variable can store.
+
+Some of the basic data types:
+
+Int: integer numbers
+Double: floating-point numbers
+String: a sequence of characters
+Bool: true/false values
+
+To declare a variable named artist and give it the type String:
+
+var artist: String
+
+Note: Swift is known as a strongly typed language. 
+If you try to give an integer variable a decimal value, you are going to get unexpected results, warnings, or errors.
+
+12345
+var book:String = "Just Kids"
+
+var pageCount:Int = ten
+
+
+Output:
+Type.swift:5:13: error: cannot assign value of type 'String' to type 'Int'
+pageCount = "ten"
+
+String Interpolation
+Often times, we find ourselves needing to insert values into a string. 
+In these cases, we can use string interpolation.
+
+In Swift, to insert a value into a string using string interpolation, 
+we can write the value in parentheses, and write a backslash \ before the parentheses.
+
+var albums = 17
+ 
+print("Daniel Johnston made \(albums) studio albums.")
+
+
+Constants
+We’ve manipulated variables in the last few exercises, 
+but what about variables with values we don’t want to change? That’s the job for constants.
+
+Whereas variables can be reassigned during their lifetime, constants cannot. 
+Once we assign a value to a constant in Swift, it becomes immutable. This means that the value stored in it cannot be changed.
+
+In Swift, constants are declared using the let keyword:
+
+let pi = 3.14
+
+pi=3.1415
+
+Output-only Terminal
+Output:
+Constant.swift:3:1: error: cannot assign to value: 'pi' is a 'let' constant
+pi=3.1415
+^~
+Constant.swift:1:1: note: change 'let' to 'var' to make it mutable
+let pi=3.14

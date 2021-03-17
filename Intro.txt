@@ -1,0 +1,12 @@
+Introduction to Swift
+
+Swift was developed by Apple in July 2010
+
+Expressive language. Easy to understand so good for beginners
+
+First version released in 2014 with intent to create apps
+for iOS, watchOS, macOS, tvOS, and Linux
+
+print("Hello, world!")
+
+print function is how you print to the terminal in Swift
