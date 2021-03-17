@@ -30,3 +30,5 @@ switch randomNumber {
         eightBall = "Error"
 }
 
+print("\(playerName) asks: \(playerQuestion)")
+print("Magic 8 Ball's answer: \(eightBall)")
